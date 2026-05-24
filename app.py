@@ -2,8 +2,8 @@ import pickle
 import numpy as np
 import pandas as pd
 import streamlit as st
-loaded_model=pickle.load(open('/home/loki/Developer/Ml/Project/LogisticRegreesion/FakeNews/model.pkl','rb'))
-feature_extreactor=pickle.load(open('/home/loki/Developer/Ml/Project/LogisticRegreesion/FakeNews/feature.pkl','rb'))
+loaded_model=pickle.load(open('model.pkl','rb'))
+feature_extreactor=pickle.load(open('feature.pkl','rb'))
 def fake_mail_detector(input):
     sample_features = feature_extreactor.transform([input])
 
