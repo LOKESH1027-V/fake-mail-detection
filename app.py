@@ -16,7 +16,7 @@ def fake_mail_detector(input):
 
 def main():
     st.title("Fake mail detection") 
-    mail_text=st.text_input("Enter the conntent of the mail")
+    mail_text = st.text_area("Enter the content of the mail")
     result=""
     if st.button("Predict"):
         result=fake_mail_detector(mail_text)
